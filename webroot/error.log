@@ -1,0 +1,17 @@
+2015-04-07 03:49:59 Error: [InvalidArgumentException] Please pass "username" instead of "login" for connecting to the database
+Stack Trace:
+#0 C:\xampp\htdocs\Dropbox\Desenvolvimento\tg\vendor\cakephp\cakephp\src\Database\Connection.php(168): Cake\Database\Driver->__construct(Array)
+#1 C:\xampp\htdocs\Dropbox\Desenvolvimento\tg\vendor\cakephp\cakephp\src\Database\Connection.php(107): Cake\Database\Connection->driver('Cake\Database\D...', Array)
+#2 C:\xampp\htdocs\Dropbox\Desenvolvimento\tg\vendor\cakephp\cakephp\src\Datasource\ConnectionRegistry.php(76): Cake\Database\Connection->__construct(Array)
+#3 C:\xampp\htdocs\Dropbox\Desenvolvimento\tg\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php(88): Cake\Datasource\ConnectionRegistry->_create('Cake\Database\C...', 'default', Array)
+#4 C:\xampp\htdocs\Dropbox\Desenvolvimento\tg\vendor\cakephp\cakephp\src\Datasource\ConnectionManager.php(195): Cake\Core\ObjectRegistry->load('default', Array)
+#5 C:\xampp\htdocs\Dropbox\Desenvolvimento\tg\vendor\cakephp\debug_kit\src\Panel\SqlLogPanel.php(48): Cake\Datasource\ConnectionManager::get('default')
+#6 C:\xampp\htdocs\Dropbox\Desenvolvimento\tg\vendor\cakephp\debug_kit\src\Routing\Filter\DebugBarFilter.php(159): DebugKit\Panel\SqlLogPanel->initialize()
+#7 C:\xampp\htdocs\Dropbox\Desenvolvimento\tg\vendor\cakephp\cakephp\src\Event\EventManager.php(385): DebugKit\Routing\Filter\DebugBarFilter->beforeDispatch(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 C:\xampp\htdocs\Dropbox\Desenvolvimento\tg\vendor\cakephp\cakephp\src\Event\EventManager.php(351): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#9 C:\xampp\htdocs\Dropbox\Desenvolvimento\tg\vendor\cakephp\cakephp\src\Event\EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#10 C:\xampp\htdocs\Dropbox\Desenvolvimento\tg\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#11 C:\xampp\htdocs\Dropbox\Desenvolvimento\tg\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#12 {main}
+
+

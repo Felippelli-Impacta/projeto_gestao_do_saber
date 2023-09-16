@@ -1,0 +1,91 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{margin-top: 50px;}
+.row-header{font-weight: bold;}
+.strip {
+    padding: 5px ;
+    border-top: 1px solid #ddd ;
+    background: #fff !important;
+}
+.row-header.strip {
+    background: #f9f9f9 !important;
+}
+.strip:nth-child(even) {
+	background-color: #f9f9f9 !important;
+}
+.labelUser {
+    font-size: 16px;
+    text-align: left;
+    text-indent: 10px;
+}
+.alert {
+    padding: 4px 15px;
+    margin-bottom: 10px;
+}
+.message {
+    margin-top: 10px;
+    padding: 4px 15px;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.message.success {background-color: #dff0d8;border-color: #CBE9BF !important;color: #499C29;}
+.message.error {background-color: #f2dede;border-color: #EFCCCC !important;color: #B36C6C;}
+
+.btn-black {background-color: #222;border-color: #080808;color: #ffffff;}
+.btn-black:hover {background-color: #080808;border-color: #000000;color: #ffffff;}
+.color000 {color: #000000;}
+
+.marginBottom10 {margin-bottom: 10px;}
+.marginTop10 {margin-top: 10px;}
+.marginVertical10 {margin: 10px 0px;}
+.marginBottom20 {margin-bottom: 20px;}
+.marginTop20 {margin-top: 20px;}
+.marginVertical20 {margin: 20px 0px;}
+.marginBottomZero {margin-bottom: 0px;}
+.marginTopZero {margin-top: 0px;}
+
+
+.paddingZero {padding: 0px !important;}
+.paddingLeftZero {padding-left: 0px;}
+.paddingRightZero {padding-right: 0px;}
+.paddingTopZero {padding-top: 0px;}
+.paddingBottomZero {padding-bottom: 0px;}
+.paddingVertical10 {padding: 10px 0px;}
+.paddingVertical20 {padding: 20px 0px;}
+
+.floatLeft {float: left;}
+.floatRight {float: right;}
+
+.ten-column {width: 100%;}
+
+
+.slider .ui-slider-range { background: #0073ea; }
+.slider .ui-slider-handler { background: #0073ea; }
+.espacamento{
+        width: 20px;
+        height: 10px;
+        display: block;
+        float: left;
+}
+.slider{
+        height: 20px;
+        margin-top: 3px;
+        margin-right: 10px;
+}
+.ui-slider-handle.ui-state-default.ui-corner-all{
+        height: 20px;
+        top: -0.08em;
+
+}
+.col-sm-3{
+        text-align: 16px;
+        padding-top: 5px;
+}
