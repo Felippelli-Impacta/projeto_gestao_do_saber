@@ -1,6 +1,6 @@
 var slider_id;
 $(function () {
-	
+
 	$(".slider").slider({
 		range: "min",
 		value: 0,
@@ -18,12 +18,12 @@ $(function () {
 		},
 		stop: function (event, ui) {
 			var data = $('#form' + slider_id).serialize();
-			$.post(APP + 'conhecimento/save/',
+			$.post(APP + 'saber/save/',
 			data
 			, function (e) {
 				if(e.error==false){
 					if($('#form' + slider_id+' .id').length ==0 )
-						$('#form' + slider_id).append("<input name='Conhecimento[id]' class='id' type='hidden'  value='"+e.conhecimento.id+"'>");
+						$('#form' + slider_id).append("<input name='Saber[id]' class='id' type='hidden'  value='"+e.saber.id+"'>");
 				}
 			}, 'json');
 		},
@@ -33,8 +33,8 @@ $(function () {
 	});
     //$( ".nivel" ).val( "$" + $( ".slider"+$(this).attr('id') ).slider( "value" ) );
 	//$(".nivel").val(0);
-	
-	
+
+
 	//Seta o sliders nos valores salvos no banco
 	$('.nivel').each(function(){
 		slider_id=$(this).attr('rel')*1;

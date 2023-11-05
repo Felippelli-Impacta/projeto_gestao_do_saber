@@ -58,34 +58,25 @@ INSERT INTO `competencia` VALUES
 UNLOCK TABLES;
 
 --
--- Table structure for table `conhecimento`
+-- Table structure for table `saber`
 --
 
-DROP TABLE IF EXISTS `conhecimento`;
+DROP TABLE IF EXISTS `saber`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `conhecimento` (
+CREATE TABLE `saber` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `profissional_id` int(11) NOT NULL,
   `competencia_id` int(11) NOT NULL,
   `nivel` smallint(6) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `fk_conhecimentos_professores1_idx` (`profissional_id`),
-  KEY `fk_conhecimentos_materias1_idx` (`competencia_id`),
-  CONSTRAINT `fk_conhecimentos_materias1` FOREIGN KEY (`competencia_id`) REFERENCES `competencia` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_conhecimentos_professores1` FOREIGN KEY (`profissional_id`) REFERENCES `profissional` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8;
+  KEY `fk_saber_profissional_idx` (`profissional_id`),
+  KEY `fk_saber_competencia_idx` (`competencia_id`),
+  CONSTRAINT `fk_saber_competencia` FOREIGN KEY (`competencia_id`) REFERENCES `competencia` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_saber_profissional` FOREIGN KEY (`profissional_id`) REFERENCES `profissional` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `conhecimento`
---
-
-LOCK TABLES `conhecimento` WRITE;
-/*!40000 ALTER TABLE `conhecimento` DISABLE KEYS */;
-INSERT INTO `conhecimento` VALUES (10,1,1,42),(11,1,2,51),(12,1,3,16),(13,1,4,13),(14,1,5,13),(15,10,5,25),(16,10,2,35),(17,10,3,68),(18,10,4,48),(19,10,7,51),(20,10,8,29),(21,1,7,11),(22,11,7,18),(23,11,9,44),(24,11,4,32),(25,11,5,28),(26,11,8,29),(27,12,10,0),(28,1,10,42),(29,13,7,61),(30,13,9,35),(31,13,4,41),(32,13,5,55),(33,13,8,82);
-/*!40000 ALTER TABLE `conhecimento` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `profissional`

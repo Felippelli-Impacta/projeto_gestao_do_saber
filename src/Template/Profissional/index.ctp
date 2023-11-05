@@ -22,11 +22,11 @@
             <td>
                 <div class="floatRight">
                     <?php
-//                    echo $this->Html->link('Conhecimentos', [
-//                        'controller' => 'Conhecimento',
-//                        'action' => 'index',
-//                        $profissional->id
-//                    ],['class' => 'btn btn-black']);
+                    echo $this->Html->link('Saber', [
+                        'controller' => 'Saber',
+                        'action' => 'index',
+                        $profissional->id
+                    ],['class' => 'btn btn-black']);
                     ?>
                     <?= $this->Html->link('Editar', ['action' => 'edit', $profissional->id],['class' => 'btn btn-primary']) ?>
                     <?= $this->Form->postLink('Excluir', ['action' => 'delete', $profissional->id], ['confirm' => 'Você tem certeza?', 'class' => 'btn btn-danger']) ?>
