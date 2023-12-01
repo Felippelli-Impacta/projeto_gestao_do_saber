@@ -12,5 +12,6 @@
 					<ul class="nav navbar-nav navbar-left">
 						<li><?= $this->Html->link('Profissionais', ['controller' => 'profissional', 'action' => 'index']) ?></li>
                         <li><?= $this->Html->link('Competências', ['controller' => 'competencia', 'action' => 'index']) ?></li>
+                        <li><?= $this->Html->link('Relatório', ['controller' => 'relatorio', 'action' => 'index']) ?></li>
                     </ul>
 				</div>
